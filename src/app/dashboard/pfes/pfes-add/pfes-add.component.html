@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/dash']" routerLinkActive="router-link-active" >Bibliothèque</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a class="nav-link" [routerLink]="['/dash']" routerLinkActive="router-link-active">Espace de travail</a>
+          </li>
+          <li class="nav-item px-2">
+              <a class="nav-link" [routerLink]="['/livres']" routerLinkActive="router-link-active">Livres</a>
+            </li>
+			<li class="nav-item px-2">
+          <a class="nav-link" [routerLink]="['/pfes']" routerLinkActive="router-link-active" >PFEs</a>
+        </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" [routerLink]="['/prets']" routerLinkActive="router-link-active">Prêts</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" [routerLink]="['/users']" routerLinkActive="router-link-active" >Utilisateurs</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">
+              <i class="fas fa-user-times"></i> Se déconnecter
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="main-header" class="py-2 bg-success text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+            <i class="fas fa-cog"></i>PFEs</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- POSTS -->
+  <section id="posts">
+    <div class="container">
+      <div class="col-md-9 text-center" style="margin-top: 1rem">
+        <h2 class="">Ajouter un PFE</h2>
+      </div>
+      <form>
+	  <div class="form-group">
+          <label for="user">Intitulé</label>
+          <input type="text" class="form-control" #motsCles>
+        </div>
+		<div class="form-group">
+          <label for="user">Réalisateur</label>
+          <input type="text" class="form-control" #motsCles>
+        </div>
+        <div class="form-group">
+          <label for="title">Département</label>
+          <input type="text" class="form-control" #title>
+        </div>
+		<div class="form-group">
+          <label for="user">Organisme</label>
+          <input type="text" class="form-control" #motsCles>
+        </div>
+		<div class="form-group">
+          <label for="user">Année Scolaire</label>
+          <input type="text" class="form-control" #motsCles>
+        </div>
+        <div class="form-group">
+          <label for="user">Document</label>
+          <input type="file" class="form-control" #auteur>
+        </div>
+        <div class="form-group">
+          <label for="user">Encadrant</label>
+          <input type="text" class="form-control" #motsCles>
+        </div>
+		<div class="form-group">
+          <label for="user">Cote</label>
+          <input type="text" class="form-control" #motsCles>
+        </div>
+      </form>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary" (click)="addPfe(title, auteur, motsCles)" [routerLink]="['/pfes']" routerLinkActive="router-link-active" >Enregistrer</button>
+    </div>
+  </section>
