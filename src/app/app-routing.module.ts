@@ -8,7 +8,7 @@ import { PretsAddComponent } from './dashboard/prets/prets-add/prets-add.compone
 import { LivresComponent } from './dashboard/livres/livres.component';
 import { LivresAddComponent } from './dashboard/livres/livres-add/livres-add.component';
 import { UserAddComponent } from './users/user/user-add/user-add.component';
-import { PfeAddComponent } from './dashboard/pfes/pfes-add/pfes-add.component';
+import { PfesAddComponent } from './dashboard/pfes/pfes-add/pfes-add.component';
 import { PfesComponent } from './dashboard/pfes/pfes.component';
 
 
@@ -20,8 +20,8 @@ const routes: Routes = [
   {path: 'addPret', component: PretsAddComponent},
   {path: 'livres', component: LivresComponent},
   {path: 'addLivre', component: LivresAddComponent},
-   {path: 'pfes', component: pfesComponent},
-  {path: 'addPfe', component: pfesAddComponent},
+  {path: 'pfes', component: PfesComponent},
+  {path: 'addPfe', component: PfesAddComponent},
   {path: 'users', component: UserComponent},
   {path: 'addUser', component: UserAddComponent}
 ];

@@ -11,7 +11,7 @@ import { PretsAddComponent } from './dashboard/prets/prets-add/prets-add.compone
 import { LivresComponent } from './dashboard/livres/livres.component';
 import { LivresAddComponent } from './dashboard/livres/livres-add/livres-add.component';
 import { UserAddComponent } from './users/user/user-add/user-add.component';
-import { PfeAddComponent } from './dashboard/pfes/pfes-add/pfes-add.component';
+import { PfesAddComponent } from './dashboard/pfes/pfes-add/pfes-add.component';
 import { PfesComponent } from './dashboard/pfes/pfes.component';
 
 @NgModule({
@@ -19,11 +19,11 @@ import { PfesComponent } from './dashboard/pfes/pfes.component';
     AppComponent,
     LoginComponent,
     UserComponent,
-	PfeComponent,
+	  PfesComponent,
     DashboardComponent,
     PretsComponent,
     PretsAddComponent,
-	PfesAddComponent,
+	  PfesAddComponent,
     LivresComponent,
     LivresAddComponent,
     UserComponent,

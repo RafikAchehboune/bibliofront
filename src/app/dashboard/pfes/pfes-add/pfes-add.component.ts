@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { LivresService } from '../../livres.service';
 
 @Component({
-  selector: 'app-livres-add',
-  templateUrl: './livres-add.component.html',
-  styleUrls: ['./livres-add.component.css']
+  selector: 'app-pfes-add',
+  templateUrl: './pfes-add.component.html',
+  styleUrls: ['./pfes-add.component.css']
 })
-export class LivresAddComponent implements OnInit {
+export class PfesAddComponent implements OnInit {
 
   @ViewChild('title') titleRef: ElementRef;
   @ViewChild('auteur') userRef: ElementRef;

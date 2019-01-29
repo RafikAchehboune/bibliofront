@@ -3,8 +3,8 @@ import { Subject } from 'rxjs';
 
 @Injectable({providedIn: 'root'})
 
-export class LivresService {
-  private livres = [
+export class PfesService {
+  private pfes = [
     {
       'n': 1,
       'titre': 'The Supreme Dweller',
@@ -36,24 +36,24 @@ export class LivresService {
       'motsCles': 'Nasa, Immunology, International Space Station, Richard Feynman'
     }
   ];
-  private livresUpdate = new Subject<{livres: any}>();
+  private pfesUpdate = new Subject<{pfesres: any}>();
 
   getLivres() {
-    return [...this.livres];
+    return [...this.pfes];
   }
 
-  getLivresUpdateListner() {
-    return this.livresUpdate.asObservable();
+  getPfesUpdateListner() {
+    return this.pfesUpdate.asObservable();
   }
 
   ajouterLivre(titre: string, auteur: string, motsCles: string) {
-    const len = this.livres.length + 1;
-    this.livres.push({
+    const len = this.pfes.length + 1;
+    this.pfes.push({
       'n': len,
       'titre': titre,
       'auteur': auteur,
       'motsCles': motsCles
     });
-    this.livresUpdate.next({ livres: [...this.livres]});
+    //this.pfesUpdate.next({ pfes: [...this.pfes]});
   }
 }
